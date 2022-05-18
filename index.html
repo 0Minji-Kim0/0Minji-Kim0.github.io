@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈 | 신라스테이 광화문</title>
-    <meta name="description" content="">
-    <meta name="keywords" >
+    <meta name="description" content="이 사이트는 flex 기반으로 제작한 레이아웃, css animation, jquery 등을 사용한 웹표준과 웹접근성을 준수하는 구직을 목적으로 만든 포트폴리오 사이트입니다.">
+    <meta name="keywords" content="웹디자인, 웹퍼블리셔, 프론트엔드, 포트폴리오, 프론트엔드 개발, html, css, jquery, flex 기반 레이아웃, css animation, jquery animation, ui, ux, 웹표준, 웹접근성 준수">
     <meta nema="robot" content="index, follow">
     <meta name="author" content="김민지, Minji Kim">
     <meta name="reply-to" content="mjk622@naver.com">
     <meta name="generator" content="visual studio code">
     <meta name="copyright" content="김민지, Minji Kim">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
@@ -41,12 +45,13 @@
                 <div class="main_nav">
                     <ul class="main_menu">
                         <li>
-                            <a href="">스폐셜오퍼</a>
+                            <a href="">스페셜오퍼</a>
                             <ul>
                                 <li><a href="">객실 패키지</a></li>
                                 <li><a href="">이벤트</a></li>
                             </ul>
                         </li>
+                        <span>|</span>
                         <li>
                             <a href="">객실</a>
                             <ul>
@@ -55,7 +60,9 @@
                                 <li><a href="">프리미어 디럭스</a></li>
                                 <li><a href="">그랜드</a></li>
                                 <li><a href="">전체객실보기</a></li>
-                            </ul></li>
+                            </ul>
+                        </li>
+                        <span>|</span>
                         <li>
                             <a href="">다이닝</a>
                             <ul>
@@ -63,6 +70,7 @@
                                 <li><a href="">라운지 & 바</a></li>
                             </ul>
                         </li>
+                        <span>|</span>
                         <li>
                             <a href="">부대시설</a>
                             <ul>
@@ -71,29 +79,207 @@
                                 <li><a href="">피트니스</a></li>
                             </ul>
                         </li>
+                        <span>|</span>
                         <li>
                             <a href="">고객서비스</a>
                             <ul>
                                 <li><a href="">호텔안내</a></li>
-                                <li><a href="">층별안내도</a></li>
                                 <li><a href="">FAQ</a></li>
                                 <li><a href="">문의하기</a></li>
-                                <li><a href="">연락처</a></li>
                                 <li><a href="">인근명소</a></li>
                                 <li><a href="">갤러리</a></li>
                                 <li><a href="">호텔정보</a></li>
                             </ul>
                         </li>
+                        <span>|</span>
                         <li>
                             <a href="">오시는길</a>
                         </li>
                     </ul>
+                    <button>객실예약<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg></button>
                 </div>
             </nav>
-
+        </div>
+        <div class="reservation container">
+            <p>
+                <label for="hotel">호텔 또는 도시</label>
+                <input id="hotel" name="hotel" type="text" placeholder="신라스테이 광화문">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+                </a>
+            </p>
+            <p>
+                <label for="checkIn">체크인</label>
+                <input id="checkIn" name="checkIn" type="date">
+            </p>
+            <p>
+                1박
+            </p>
+            <p>
+                <label for="checkOut">체크아웃</label>
+                <input id="checkOut" name="checkOut" type="date">
+            </p>
+            <p>
+                <span>객실</span>
+                <a href="">1</a>
+            </p>
+            <p>
+                <span>성인</span>
+                <a href="">2</a>
+            </p>
+            <p>
+                <span>어린이</span>
+                <a href="">0</a>
+            </p>
+            <p>
+                <span>유아</span>
+                <a href="">0</a>
+            </p>
+            <a href="">검색</a>
+            <button>숨기기<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/></svg></button>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="mainslides_wrapper container">
+            <ul class="mainslides">
+                <li class="slide1"><a href="">slide1</a></li>
+                <li class="slide2"><a href="">slide2</a></li>
+                <li class="slide3"><a href="">slide3</a></li>
+            </ul>
+        </div>
+        <section class="events container">
+            <h2>스페셜 오퍼</h2>
+            <ul class="events_wrapper">
+                <li>
+                    <img src="images/event1.png" alt="Early Bird Offer">
+                    <a href="" class="event1 DN">
+                        <p>Early Bird Offer</p>
+                        <p>스탠다드 객실 1실 1박 + COVA 커피 2잔</p>
+                        <p>2022.01.01 ~ 2022.06.30</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/event2.png" alt="My Oasis">
+                    <a href="" class="event2 DN">
+                        <p>My Oasis</p>
+                        <p>객실 1박, 트리앤씨 크림 & 미스트, 신라스테이 베어</p>
+                        <p>2022.03.08 ~ 2022.05.31</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/event3.png" alt="[삼성전자] The Freestyle in Room">
+                    <a href="" class="event3 DN">
+                        <p>[삼성전자] The Freestyle in Room</p>
+                        <p>프라이빗 시네마 콘셉트 객실 1실 1박 + 삼성전자 The Freestyle 1set 대여 + ...</p>
+                        <p>2022.05.03 ~ 2022.12.31</p>
+                    </a>
+                </li>    
+            </ul>
+        </section>
+        <section class="rooms container">
+            <h2>호텔 객실</h2>
+            <ul>
+                <li class="standard">
+                    <h3>스탠다드</h3>
+                    <p>9~15층에 위치한 스탠다드룸은 편안함과 쾌적함이 인상적인 최상의 휴식 환경을 제공합니다.</p>
+                    <a href="">자세히보기</a>
+                </li>
+                <li class="deluxe">
+                    <h3>디럭스</h3>
+                    <p>16~19층에 위치한 디럭스룸은 도심에서의 여유로운 휴식을 누릴 수 있는 최상의 선택입니다.</p>
+                    <a href="">자세히보기</a>
+                </li>
+                <li class="premier deluxe">
+                    <h3>프리미어 디럭스</h3>
+                    <p>고층에 위치한 프리미어 디럭스룸은 미니바가 포함되어 있어 보다 편안하게 이용하실 수 있는 객실입니다.</p>
+                    <a href="">자세히보기</a>
+                </li>
+                <li class="grand">
+                    <h3>그랜드</h3>
+                    <p>15~17층에 위치한 그랜드룸은 심플하고 모던한 디자인이 돋보이는 넓은 공간을 자랑합니다.</p>
+                    <a href="">자세히보기</a>
+                </li>
+            </ul>
+        </section>
+        <section class="facilities container">
+            <ul>
+                <li>호텔시설</li>
+                <li><a href="">Restaurant</a></li>
+                <li><a href="">Lounge & Bar</a></li>
+                <li><a href="">Meeting Room</a></li>
+                <li><a href="">Business Corner</a></li>
+                <li><a href="">Fitness Corner</a></li>
+            </ul>
+        </section>
+        <section class="attraction container">
+            <div class="attraction1">
+                <img src="images/attraction1.png" alt="경복궁">
+                <div>
+                    <h2>경복궁</h2>
+                    <p>광화문에 위치한 조선시대의 법궁</p>
+                </div>
+            </div>
+            <div class="attraction2">
+                <img src="images/attraction2.png" alt="북촌한옥마을">
+                <div>
+                    <h2>북촌한옥마을</h2>
+                    <p>옛 선조의 생활양식과 건축물을 구경할 수 있는 곳</p>
+                </div>
+            </div>
+        </section>
+        <section class="rewards container">
+            <div>
+                <h2>신라리워즈</h2>
+                <p>신라리워즈는 서울 제주 신라호텔 ,신라 모노그램, 신라 스테이 및 제휴 호텔에서 포인트 혜택 및 특전을 제공하는 통합멤버십 서비스입니다.
+                    지금 가입하시고 회원만을 위한 특별한 서비스와 다양한 혜택을 받으십시오.</p>
+            </div>
+            <img src="images/silla rewards.png" alt="신라리워즈">
+        </section>
+    </main>
+    <footer>
+        <h1><a href="">신라스테이 광화문</a></h1>
+        <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="">신라스테이 소개</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="">사이트맵</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="">개인정보처리방침</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="">이메일무단수집금지</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="">영상정보처리기기 운영방침</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_content container">
+            <address>
+                <p>신라스테이 광화문</p>
+                <p>서울특별시 종로구 삼봉로 71 (지번주소: 서울특별시 종로구 수송동 51-8)</p>
+                <p>TEL 02-6060-9000</p>
+                <p>FAX 02-6060-9100</p>
+            </address>
+            <div class="sns">
+                <a href="" class="instagram">
+                    <?xml version="1.0" ?><svg data-name="Google alt" id="Google_alt" viewBox="0 0 420 419.997" xmlns="http://www.w3.org/2000/svg"><title/><path d="M388.818,146.28a24.3,24.3,0,1,1-24.295-24.295A24.3,24.3,0,0,1,388.818,146.28ZM466,256l-0.005.306-1.38,88.105a121.58,121.58,0,0,1-120.2,120.2L256,466l-0.306-.006-88.105-1.376a121.586,121.586,0,0,1-120.206-120.2L46,256l0.006-.306,1.376-88.108a121.59,121.59,0,0,1,120.206-120.2L256,46l0.306,0.006,88.105,1.376a121.584,121.584,0,0,1,120.2,120.2Zm-39.112,0-1.374-87.8A82.654,82.654,0,0,0,343.8,86.485L256,85.114l-87.8,1.371A82.658,82.658,0,0,0,86.484,168.2L85.113,256l1.371,87.8A82.655,82.655,0,0,0,168.2,425.515l87.8,1.371,87.8-1.371A82.651,82.651,0,0,0,425.514,343.8Zm-63.048,0A107.841,107.841,0,1,1,256,148.159,107.962,107.962,0,0,1,363.84,256Zm-39.107,0A68.734,68.734,0,1,0,256,324.734,68.812,68.812,0,0,0,324.732,256Z" transform="translate(-46 -46.001)"/></svg>
+                </a>
+                <a href="" class="facebook">
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/></svg>
+                </a>
+                <a href="" class="youtube">
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M508.6,148.8c0-45-33.1-81.2-74-81.2C379.2,65,322.7,64,265,64c-3,0-6,0-9,0s-6,0-9,0c-57.6,0-114.2,1-169.6,3.6   c-40.8,0-73.9,36.4-73.9,81.4C1,184.6-0.1,220.2,0,255.8C-0.1,291.4,1,327,3.4,362.7c0,45,33.1,81.5,73.9,81.5   c58.2,2.7,117.9,3.9,178.6,3.8c60.8,0.2,120.3-1,178.6-3.8c40.9,0,74-36.5,74-81.5c2.4-35.7,3.5-71.3,3.4-107   C512.1,220.1,511,184.5,508.6,148.8z M207,353.9V157.4l145,98.2L207,353.9z"/></g></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
