@@ -32,6 +32,12 @@ h2, .facilities .title{
     font-size: 12px;
 }
 /* ------------------ HEADER ------------------ */
+h1 {
+    text-indent: -9999em;
+    width: 210px;
+    height: 90px;
+    background: url(../images/logo-ghm.png) no-repeat;
+}
 body > header .header{
     background: rgba(196, 177, 150, .8);
 }
@@ -64,19 +70,94 @@ body > header .container{
 /* ------------------ MAIN PAGE ------------------ */
 .reservation {
     background: rgba(226,218,207,.95);
+    display: none;
+    height: 137px;
 }
-.reservation .container{
+.reservation .container{    
     display: flex;
+
 }
-.reservation .reservation_search{
-    width: 18px;
-} 
 .reservation .reservation_search svg{
-    width: 100%;
-}
-.reservation .hide{
-    width: 12px;
+    width: 18px;
 }
 .reservation .hide svg{
+    width: 12px;
+}
+.mainslides {
     width: 100%;
+    height: 600px;
+}
+.slide1 {
+    width: 100%;
+    height: 600px;
+    background: url(../images/mainslide1.jpg) no-repeat center;
+    text-indent: -9990em;
+} 
+.slide2 {
+    text-indent: -9990em;
+} 
+.slide3 {
+    text-indent: -9990em;
+}
+.events_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.rooms{
+    width: 100%;
+    height: 830px;
+    background: url(../images/standard.jpg) no-repeat center center / 100% 100%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.rooms:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 830px;
+    z-index:-10;
+}
+.rooms ul{
+    display: flex;
+    justify-content: space-between;
+}
+.rooms li, .rooms a{
+    color: #fff;
+}
+.rooms p, .rooms a{
+    display: none;
+}
+.facilities {
+    width: 100%;
+    height: 830px;
+    background: url(../images/facilities1.jpg) no-repeat 100% 100% / 100% 100%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.facilities:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 830px;
+    z-index: -1;
+}
+.facilities a{
+    color: #fff;
+}
+.rewards{
+    display: flex;
+}
+footer{
+    display: flex;
+    background: #f0ece7;
+}
+.footer_menu ul{
+    display: flex;
+}
+.sns svg{
+    width: 18px;
 }
