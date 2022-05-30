@@ -12,11 +12,11 @@ body{
     color: #211f20;
     font-weight: 400;
 }
-h2, .facilities .title{
+h2, .facilities .facilities_title{
     font-size: 32px;
     font-weight: 500;
 }
-.reservation button, .event_title, h3, .facilities li:not(li:first-child), .attraction p, .rewards p{
+.reservation button, .event_title, h3, .facilities, .attraction p, .rewards p{
     font-size: 22px;
     font-weight: 500;
 }
@@ -28,8 +28,9 @@ h2, .facilities .title{
     font-size: 12px;
 }
 /* ------------------ HEADER ------------------ */
-h1 {
+h1 a{
     text-indent: -9999em;
+    display: block;
     width: 210px;
     height: 90px;
     background: url(../images/logo-ghm.png) no-repeat;
@@ -98,7 +99,12 @@ body > header .container{
     background: rgba(120, 108, 92, .7);
     text-align: center;
     color: #fff;
-    margin-left: 107px;
+    margin-left:107px;
+}
+.main_nav > a p{
+    width: 114px;
+    height: 40px;
+    margin: 6px 0 0 2px;
 }
 .main_nav svg{
     width: 18px;
@@ -201,30 +207,57 @@ body > header .container{
     position: absolute;
     background: rgba(0,0,0,.5);
     width: 100%;
-    height: 830px;
+    height: 100%;
     z-index:-10;
 }
-.rooms .container h2{
-    padding-top: 65px;
-    color: #fff;
+.room_wrapper{
+    padding: 0 200px 0 200px;
 }
-.rooms .container h3{
-    padding-top: 65px;
+.room_wrapper li{
+    width: 307px;
+    margin-right: 90px;
+    color: #b1b1b1;
+}
+.room_wrapper li:last-child{
+    margin-right: 0px;
 }
 .rooms ul{
     display: flex;
-    justify-content: space-between;
 }
-.rooms li, .rooms a{
+.rooms h2{
+    padding: 65px 0 65px 0;
+    color: #fff;
+}
+.rooms li:before{
+    content: '';
+    position: absolute;
+    width: 307px;
+    height: 1px;
+    border-bottom: #b1b1b1 solid 1px;
+}
+.rooms h3{
+    padding: 30px 0 65px 0;
+}
+.room_wrapper li p{
+    padding-bottom: 77px;
+}
+.room_wrapper li a{
     color: #b1b1b1;
+    border: #b1b1b1 solid 1px;
+    padding: 1px 12px 5px 12px;
 }
-.rooms p, .rooms a{
-    display: none;
+.rooms li:hover{
+    color: #fff;
 }
-.standard h3:hover{
-    background: url(../images/standard.jpg) no-repeat center center / 100% 830px;
+.rooms li:hover:before{
+    border-bottom: #fff solid 1px;
 }
-.facilities {
+.room_wrapper li:hover a{
+    color: #fff;
+    border: #fff solid 1px;
+    padding: 1px 12px 5px 12px;
+}
+.facilities{
     width: 100%;
     height: 830px;
     background: url(../images/facilities1.jpg) no-repeat 100% 100% / 100% 100%;
@@ -240,6 +273,43 @@ body > header .container{
     width: 100%;
     height: 830px;
     z-index: -1;
+}
+.facilities .container{
+    width: 550px;
+    height: 350px;
+}
+.facilities_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 370px 0 30px 0;
+}
+.facilities_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.facilities li{
+    width: 150px;
+    height: 150px;
+    border: #fff solid 5px;
+    text-align: center;
+}
+.facilities li:hover:not(.facilities_title){
+    border: #f18847 solid 5px;
+}
+.facilities li:hover a{
+    color: #f18847;
+}
+.facilities .facilities_title p{
+    padding-top: 52px;
+}
+.facilities li p{
+    padding-top: 40px;
+}
+.facilities_top li:nth-child(2) p{
+    padding-top: 57px;
+}
+.facilities_top li:nth-child(3) p{
+    padding-top: 28px;
 }
 .facilities a{
     color: #fff;
@@ -291,7 +361,7 @@ body > header .container{
     margin-bottom: 243px;
     background: #f3f3f2;
     width: 100%;
-    height: 352px;
+    height: 370px;
 }
 .rewards .container{
     margin-top: 53px;
