@@ -6,10 +6,6 @@
     width: 1296px;
     margin: 0 auto;
 }
-.DN{
-    display: none;
-}
-
 /* ------------------ TYPOGRAPHY ------------------ */
 body{
     font: 18px 'Noto Sans KR', sans-serif;
@@ -38,8 +34,11 @@ h1 {
     height: 90px;
     background: url(../images/logo-ghm.png) no-repeat;
 }
-body > header .header{
+body > header{
     background: rgba(196, 177, 150, .8);
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
 }
 body > header .container{
     display: flex;
@@ -47,25 +46,65 @@ body > header .container{
 }
 .top_menu {
     display: flex;
+    justify-content: flex-end;
+}
+.top_menu svg{
+    width: 14px;
 }
 .top_menu_left{
     display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
 }
 .top_menu_right{
     display: flex;
+    justify-content: space-between;
+    width: 285px;
 }
-.top_menu_left{
-    display: flex;
+.rewards_link{
+    background: #f18847;
+    width: 84px;
+    height: 23px;
+    margin-left: 20px;
+}
+.rewards_link a{
+    color: #fff;
+    text-align: center;
+    margin-left: 5px;
+}
+#language{
+    border: none;
+    appearance: none;
 }
 .main_nav{
     display: flex;
+    justify-content: flex-end;
     margin-top: 50px;
 }
-.main_menu {
+.main_menu{
     display: flex;
+    width: 576px;
+    justify-content: space-between;
+}
+.main_menu li a:hover{
+    color: #fc6000;
 }
 .main_menu li ul{
     display: none;
+}
+.main_nav > a{
+    width: 114px;
+    height: 40px;
+    background: rgba(120, 108, 92, .7);
+    text-align: center;
+    color: #fff;
+    margin-left: 107px;
+}
+.main_nav svg{
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    padding-left: 10px;
 }
 /* ------------------ MAIN PAGE ------------------ */
 .reservation {
@@ -99,17 +138,63 @@ body > header .container{
 .slide3 {
     text-indent: -9990em;
 }
+.events{
+    padding: 164px 0 172px 0;
+}
 .events_wrapper{
     display: flex;
     justify-content: space-between;
+    padding-top: 66px;
+}
+.events_wrapper li{
+    width: 350px;
+    height: 350px;
+}
+.events_wrapper div:hover:after{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background:rgba(0,0,0,.5);
+}
+.events_wrapper .event1{
+    background: url(../images/event1.png) no-repeat;
+    width: 350px;
+    height: 350px;
+}
+.events_wrapper .event2{
+    background: url(../images/event2.png) no-repeat;
+    width: 350px;
+    height: 350px;
+}
+.events_wrapper .event3{
+    background: url(../images/event3.png) no-repeat;
+    width: 350px;
+    height: 350px;
+}
+.events_wrapper li a{
+    display: none;
+}
+.events_wrapper li div:hover a{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    display: block;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+    padding-top: 75px;
+}
+.events_wrapper li div:hover p{
+    padding-bottom: 20px;
 }
 .rooms{
     width: 100%;
     height: 830px;
-    background: url(../images/standard.jpg) no-repeat center center / 100% 100%;
-    color: #fff;
+    background: url(../images/standard.jpg) no-repeat center center / 100% 830px;
     position: relative;
     z-index: 1;
+    margin-bottom: 187px;
 }
 .rooms:before {
     content: '';
@@ -119,15 +204,25 @@ body > header .container{
     height: 830px;
     z-index:-10;
 }
+.rooms .container h2{
+    padding-top: 65px;
+    color: #fff;
+}
+.rooms .container h3{
+    padding-top: 65px;
+}
 .rooms ul{
     display: flex;
     justify-content: space-between;
 }
 .rooms li, .rooms a{
-    color: #fff;
+    color: #b1b1b1;
 }
 .rooms p, .rooms a{
     display: none;
+}
+.standard h3:hover{
+    background: url(../images/standard.jpg) no-repeat center center / 100% 830px;
 }
 .facilities {
     width: 100%;
@@ -136,6 +231,7 @@ body > header .container{
     color: #fff;
     position: relative;
     z-index: 1;
+    margin-bottom: 178px;
 }
 .facilities:before {
     content: '';
@@ -148,16 +244,126 @@ body > header .container{
 .facilities a{
     color: #fff;
 }
+.attraction{
+    margin-bottom: 164px;
+}
+.attraction p {
+    padding-top: 20px;
+}
+.attraction1 div, .attraction2 div{
+    margin-top: 53px;
+}
+.attraction1, .attraction2{
+    display: flex;
+    justify-content: space-between;
+}
+.attraction1 div{
+    margin-right: 284px;
+}
+.attraction1 div h2:after{
+    content: '';
+    position: absolute;
+    width: 460px;
+    height: 5px;
+    background: rgba(196, 177, 150, .5);
+    margin: 20px 0 0 43px;
+}
+.attraction2 div h2{
+    margin-left: 274px;
+}
+.attraction2:before{
+    content: '';
+    position: absolute;
+    width: 366px;
+    height: 5px;
+    background: rgba(196, 177, 150, .5);
+    margin: 74px 43px 0 0;
+}
+.attraction2 img{
+    order: 2;
+}
+.attraction2 div{
+    order: 1;
+    margin-left: 136px;
+}
 .rewards{
     display: flex;
+    margin-bottom: 243px;
+    background: #f3f3f2;
+    width: 100%;
+    height: 352px;
+}
+.rewards .container{
+    margin-top: 53px;
+    display: flex;
+}
+.rewards h2{
+    padding-bottom: 12px;
+    border-bottom: #787871 solid 1px;
+    display: inline;
+}
+.rewards p{
+    margin-top: 65px;
+    line-height: 48px;
+}
+
+.rewards_content{
+    margin-right: 300px;
+}
+.rewards img{
+    width: 263px;
+    height: 168px;
+    padding-top: 85px;
 }
 footer{
-    display: flex;
     background: #f0ece7;
+    height: 100%;
+    width: 100%;
+}
+footer .container h1 {
+    margin: 83px 118px 0 0;
+}
+footer .container{
+    display: flex;
 }
 .footer_menu ul{
     display: flex;
+    width: 840px;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+.footer_menu ul:after {
+    content: '';
+    position: absolute;
+    width: 940px;
+    height: 1px;
+    background: rgba(60, 60, 60, .05);
+    margin-top: 50px;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 35px 0;
+}
+.footer_content address p, .footer_content address span{
+    margin-bottom: 10px;
+}
+.footer_content .tel span:first-child{
+    margin-right: 57px;
+}
+.footer_content .tel span:last-child{
+    margin-bottom: 0;
+}
+.sns{
+    display: flex;
+    margin: 30px 0 0 320px;
+    width: 130px;
+    justify-content: space-between;
+}
+.sns svg:hover{
+    fill: #fc6000;
 }
 .sns svg{
     width: 18px;
+    height: 18px;
 }
