@@ -437,3 +437,26 @@ footer .container{
     width: 18px;
     height: 18px;
 }
+/* ------------------ SUBPAGE ------------------ */
+.subpages_title{
+    padding: 110px 0 25px 0;
+    border-bottom: #e2dacf solid 10px;
+    margin-bottom: 50px;
+    display: flex;
+}
+/* ------------------ ACCOMMODATION ------------------ */
+#accomodation_title h2{
+    padding-right: 30px;
+}
+#accomodation_title h2:first-child:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 36px;
+    background: #211f20;
+    margin-left: 29px;
+    margin-top: 6px;
+}
+#accomodation_title h2:last-child{
+    padding-left: 30px;
+}
