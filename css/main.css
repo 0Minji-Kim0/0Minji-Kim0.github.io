@@ -132,7 +132,8 @@ body > header .container{
     width: 100%;
     height: 600px;
 }
-.slide1 {
+.slide1 a{
+    display: block;
     width: 100%;
     height: 600px;
     background: url(../images/mainslide1.jpg) no-repeat center;
