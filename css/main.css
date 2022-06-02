@@ -461,3 +461,7 @@ footer .container{
 #accomodation_title h2:last-child{
     padding-left: 30px;
 }
+#location_map{
+    width: 312px;
+    height: 329px;
+}
