@@ -112,6 +112,48 @@ body > header .container{
     fill: #fff;
     padding-left: 10px;
 }
+@media (max-width:768px){
+    body{
+        width: auto;
+    }
+    .container{
+        width: auto;
+        margin: 0 55px;
+    }
+    .top_menu, .main_nav {
+        display: none;
+    }
+    h1 a{
+        text-indent: -9999em;
+        display: block;
+        width: 120px;
+        height: 60px;
+        background: url(../images/logo-ghm_tablet.png) no-repeat;
+    }
+    .h1_header{
+        text-indent: 0;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media (max-width:480px){
+    body{
+        width: auto;
+    }
+    .container{
+        width: auto;
+        margin: 0 20px;
+    }
+    .top_menu, .main_nav {
+        display: none;
+    }
+    .h1_header{
+        text-indent: 0;
+        display: block;
+        margin: 0 auto;
+        background: url(../images/logo-ghm.png) no-repeat;
+    }
+}
 /* ------------------ MAIN PAGE ------------------ */
 .reservation {
     background: rgba(226,218,207,.95);
@@ -120,7 +162,6 @@ body > header .container{
 }
 .reservation .container{    
     display: flex;
-
 }
 .reservation .reservation_search svg{
     width: 18px;
@@ -437,6 +478,167 @@ footer .container{
 .sns svg{
     width: 18px;
     height: 18px;
+}
+@media (max-width:768px){
+    body{
+        font: 10px 'Noto Sans KR', sans-serif;
+        color: #211f20;
+        font-weight: 400;
+    }
+    h2, .facilities .facilities_title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .reservation button, .event_title, h3, .facilities, .attraction p, .rewards p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .top_menu, .reservation label, .reservation span, .events li p:last-child, .footer_content{
+        font-size: 8px;
+    }
+    
+    .reservation .hide{
+        font-size: 6px;
+    }
+    .mainslides {
+        width: 100%;
+        height: 250px;
+    }    
+    .slide1 a{
+        display: block;
+        width: 100%;
+        height: 250px;
+        background: url(../images/mainslide1_tablet.png) no-repeat center;
+        text-indent: -9990em;
+    }  
+    .events{
+        padding: 100px 0 115px 0;
+    }
+    .events_wrapper .event1{
+        background: url(../images/event1_tablet.png) no-repeat;
+        width: 240px;
+        height: 240px;
+    }
+    .events_wrapper .event2{
+        background: url(../images/event2_tablet.png) no-repeat;
+        width: 240px;
+        height: 240px;
+    }
+    .events_wrapper .event3{
+        background: url(../images/event3_tablet.png) no-repeat;
+        width: 240px;
+        height: 240px;
+    }
+    .events_wrapper li{
+        width: 240px;
+        height: 240px;
+    }
+    .events_wrapper div:hover:after{
+        width: 240px;
+        height: 240px;
+    }
+    .events_wrapper li div:hover a{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        display: block;
+        color: #fff;
+        z-index: 1;
+        text-align: center;
+        padding-top: 75px;
+    }
+    .events_wrapper li div:hover p{
+        padding-bottom: 20px;
+    }
+    .rooms{
+        height: 600px;
+        background: url(../images/standard.jpg) no-repeat center center / 100% 830px;
+        margin-bottom: 115px;
+    }
+    .rooms li:before{
+        width: 150px;
+    }
+    .room_wrapper{
+        padding: 0 55px;
+    }
+    .facilities{
+        height: 600px;
+        background: url(../images/facilities1.jpg) no-repeat 100% 100% / 100% 100%;
+        margin-bottom: 115px;
+    }
+    .facilities:before {
+        height: 600px;
+    }
+    .facilities .container{
+        width: auto;
+        margin: 0 150px;
+    }
+    .facilities_top{
+        padding: 110px 0 70px;
+    }
+    .rewards_content{
+        margin-right: 80px;
+    }
+    .rewards{
+        height: auto;
+        margin-bottom: 115px;
+    }
+    .rewards .container{
+        margin: 53px 55px;
+    }
+    footer{
+        height: auto;
+    }
+    footer .container{
+        display: block;
+    }
+    footer .container h1 {
+        text-indent: 0;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer_menu ul{
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+    }
+    .footer_menu ul:after {
+        width: 500px;
+        margin-top: 80px;
+    }
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 35px 0;
+    }
+    .footer_content address p, .footer_content address span{
+        margin-bottom: 10px;
+    }
+    .footer_content .tel span:first-child{
+        margin-right: 57px;
+    }
+    .footer_content .tel span:last-child{
+        margin-bottom: 0;
+    }
+    .sns{
+        display: flex;
+        margin: 30px 0 0 100px;
+        width: 130px;
+        justify-content: space-between;
+    }
+}
+@media (max-width:480px){
+    .mainslides {
+        width: 100%;
+        height: 300px;
+    }    
+    .slide1 a{
+        display: block;
+        width: 100%;
+        height: 300px;
+        background: url(../images/mainslide1_tablet.png) no-repeat center;
+        text-indent: -9990em;
+    }  
 }
 /* ------------------ SUBPAGE ------------------ */
 .subpages_title{
