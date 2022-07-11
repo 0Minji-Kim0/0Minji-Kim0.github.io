@@ -480,25 +480,28 @@ footer .container{
     height: 18px;
 }
 @media (max-width:768px){
+    .DN {
+        display: none;
+    }
     body{
         font: 10px 'Noto Sans KR', sans-serif;
         color: #211f20;
         font-weight: 400;
     }
     h2, .facilities .facilities_title{
-        font-size: 20px;
-        font-weight: 500;
-    }
-    .reservation button, .event_title, h3, .facilities, .attraction p, .rewards p{
         font-size: 18px;
         font-weight: 500;
     }
+    .reservation button, .event_title, h3, .facilities, .attraction p, .rewards p{
+        font-size: 16px;
+        font-weight: 500;
+    }
     .top_menu, .reservation label, .reservation span, .events li p:last-child, .footer_content{
-        font-size: 8px;
+        font-size: 10px;
     }
     
     .reservation .hide{
-        font-size: 6px;
+        font-size: 8px;
     }
     .mainslides {
         width: 100%;
@@ -512,7 +515,12 @@ footer .container{
         text-indent: -9990em;
     }  
     .events{
-        padding: 100px 0 115px 0;
+        padding: 70px 0 85px 0;
+    }
+    .events_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
     }
     .events_wrapper .event1{
         background: url(../images/event1_tablet.png) no-repeat;
