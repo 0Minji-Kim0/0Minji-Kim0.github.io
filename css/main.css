@@ -6,6 +6,9 @@
     width: 1296px;
     margin: 0 auto;
 }
+.DN_desktop{
+    display: none;
+}
 /* ------------------ TYPOGRAPHY ------------------ */
 body{
     font: 18px 'Noto Sans KR', sans-serif;
@@ -118,7 +121,14 @@ body > header .container{
     }
     .container{
         width: auto;
-        margin: 0 55px;
+        margin: 0 40px;
+    }
+    .hamberger_menu{
+        padding-top: 13px;
+        width: 18px;
+    }
+    .hamberger_menu svg{
+        width: 100%;
     }
     .top_menu, .main_nav {
         display: none;
@@ -231,7 +241,7 @@ body > header .container{
     color: #fff;
     z-index: 1;
     text-align: center;
-    padding-top: 75px;
+    padding-top: 65px;
 }
 .events_wrapper li div:hover p{
     padding-bottom: 20px;
@@ -480,7 +490,7 @@ footer .container{
     height: 18px;
 }
 @media (max-width:768px){
-    .DN {
+    .DN_tablet {
         display: none;
     }
     body{
@@ -515,74 +525,105 @@ footer .container{
         text-indent: -9990em;
     }  
     .events{
-        padding: 70px 0 85px 0;
+        padding: 55px 0 65px 0;
     }
     .events_wrapper{
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     .events_wrapper .event1{
         background: url(../images/event1_tablet.png) no-repeat;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
     .events_wrapper .event2{
         background: url(../images/event2_tablet.png) no-repeat;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
     .events_wrapper .event3{
         background: url(../images/event3_tablet.png) no-repeat;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
     .events_wrapper li{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
     .events_wrapper div:hover:after{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
     .events_wrapper li div:hover a{
         position: absolute;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         display: block;
         color: #fff;
         z-index: 1;
         text-align: center;
-        padding-top: 75px;
+        padding-top: 40px;
     }
     .events_wrapper li div:hover p{
-        padding-bottom: 20px;
+        padding-bottom: 13px;
     }
     .rooms{
-        height: 600px;
-        background: url(../images/standard.jpg) no-repeat center center / 100% 830px;
-        margin-bottom: 115px;
+        height: 500px;
+        background: url(../images/standard_tablet.jpg) no-repeat center center / 100% 500px;
+        margin-bottom: 80px;
+    }
+    .rooms h2{
+        padding: 50px 0 80px 0;
     }
     .rooms li:before{
-        width: 150px;
+        width: 80px;
     }
     .room_wrapper{
-        padding: 0 55px;
+        padding: 0 40px;
+    }
+    .room_wrapper li{
+        margin-right: 50px;
+    }
+    .room_wrapper li a{
+        padding: 1px 5px 1px 5px;
     }
     .facilities{
-        height: 600px;
-        background: url(../images/facilities1.jpg) no-repeat 100% 100% / 100% 100%;
+        height: 500px;
+        background: url(../images/facilities1_tablet.jpg) no-repeat 100% 100% / 100% 100%;
         margin-bottom: 115px;
     }
+    .facilities .facilities_title p{
+        padding-top: 35px;
+    }
+    .facilities li{
+        width: 100px;
+        height: 100px;
+    }
+    .facilities_top{
+        padding: 110px 0 70px;
+    }
+    .facilities_top li:nth-child(2) p{
+        padding-top: 35px;
+    }
+    .facilities_top li:nth-child(3) p{
+        padding-top: 14px;
+    }
+    .facilities li p{
+        padding-top: 25px;
+    }
     .facilities:before {
-        height: 600px;
+        height: 500px;
     }
     .facilities .container{
         width: auto;
         margin: 0 150px;
     }
-    .facilities_top{
-        padding: 110px 0 70px;
+    .attraction1 div h2:after{
+        display: none;
+    }
+    .attraction2:before{
+        display: none;
     }
     .rewards_content{
         margin-right: 80px;
@@ -600,10 +641,15 @@ footer .container{
     footer .container{
         display: block;
     }
-    footer .container h1 {
+    footer .container h1{
+        margin: 0 0 0 0;
+    }
+    footer .container h1 a{
         text-indent: 0;
         display: block;
         margin: 0 auto;
+        text-indent: -9999em;
+        padding-top: 20px;
     }
     .footer_menu ul{
         display: flex;
@@ -611,8 +657,7 @@ footer .container{
         justify-content: space-between;
     }
     .footer_menu ul:after {
-        width: 500px;
-        margin-top: 80px;
+        display: none;
     }
     .footer_content {
         display: flex;
@@ -753,6 +798,10 @@ section > p:last-child{
     display: flex;
 }
 /* ------------------ LOCATION ------------------ */
+#location_map{
+    width: 100%;
+    height: 700px;
+}
 .location_section p:first-child {
     font-size: 22px;
     font-weight: 500;
@@ -773,7 +822,17 @@ main .location_section{
     background: #c4b196;
     text-align: center;
     line-height: 36px;
-
+}
+@media (max-width:768px){
+    #location_map{
+        height: 400px;
+    }
+    main .location_section{
+        display: block;
+    }
+    .location_section p:first-child, .location_section p:nth-child(2){
+        margin-right: 0;
+    }
 }
 /* ------------------ explorerDestination ------------------ */
 .explorer_content p{
